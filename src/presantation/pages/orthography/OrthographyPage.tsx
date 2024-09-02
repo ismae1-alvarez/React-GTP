@@ -1,4 +1,4 @@
-import { GptMessage, MyMessage, TypingLoader } from "../../components";
+import { GptMessage, MyMessage, TextMessageBox, TypingLoader } from "../../components";
 
 
 export const OrthographyPage = () => {
@@ -17,6 +17,12 @@ export const OrthographyPage = () => {
             
           </div>
         </div>
+
+        <TextMessageBox
+          onSendMessage={ (message)=> console.log(message)}
+          placeholder="Escribe aqui lo que desseas"
+          disableCorrections
+        />
       </div>
     </>
   )};
