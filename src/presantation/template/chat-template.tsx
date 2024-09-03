@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GptMessage, MyMessage, TextMessageBox, TypingLoader } from "../../components";
+import { GptMessage, MyMessage, TextMessageBox, TypingLoader } from "../components";
 
 
 interface Messages{
@@ -7,7 +7,7 @@ interface Messages{
   isGpt: boolean;
 };
 
-export const OrthographyPage = () => {
+export const ChatTemplate = () => {
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [messages, setMessages] = useState<Messages[]>([]);
@@ -60,7 +60,6 @@ export const OrthographyPage = () => {
           placeholder="Escribe aqui lo que desseas"
           disableCorrections
         />
-
       </div>
     </>
   )};
